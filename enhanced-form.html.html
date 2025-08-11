@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Form Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #004466;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    main {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      text-align: left;
+    }
+    fieldset {
+      margin-top: 1em;
+      padding: 1em;
+      border: 1px solid #999;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      box-sizing: border-box;
+    }
+    input[type="checkbox"], input[type="radio"] {
+      width: auto;
+    }
+    .readonly-field {
+      background-color: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Sports Haven</h1>
+    <p>Showcasing Games, Skills, Media, and Fun</p>
+  </header>
+
+  <main>
+
+    <!-- Lists Section -->
+    <section>
+      <h2>Popular Sports in Kenya</h2>
+      <ul>
+        <li>Football</li>
+        <li>Rugby</li>
+        <li>Hockey</li>
+        <li>Handball</li>
+        <li>Basketball</li>
+      </ul>
+
+      <h3>Steps in joining.</h3>
+      <ol>
+        <li>Choose a sport that interests you.</li>
+        <li>Commit to getting started.</li>
+        <li>Fill out the form below.</li>
+        <li>Attend our try-out sessions.</li>
+        <li>Gear up and Participate</li>
+      </ol>
+    </section>
+
+    <!-- Tables Section -->
+    <section>
+      <h2>Try-out Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Sport</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Football</td>
+            <td>Monday, Wednesday, Friday</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Rugby</td>
+            <td>Tuesday, Thursday, Friday</td>
+            <td>1:00 PM - 3:00 PM</td>
+          </tr>
+          <tr>
+            <td>Hockey</td>
+            <td>Tuesday, Wednesday, Thursday</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    Another schedule to be released soon.
+
+    <!-- Media Section -->
+    <section>
+      <h2>We Is Greater Than I</h2>
+      <p>Watch this brief hockey shortcorner:</p>
+      <video width="100%" controls>
+        <source src="Hockey.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Here are some of the balls we'll use:</p>
+      <img src="sports.jpg" alt="Code editor with HTML5 example" width="100%">
+    </section>
+
+    <!-- HTML5 Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="/submit" method="post" autocomplete="on" novalidate>
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Rose Doe" required minlength="2" maxlength="50">
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="example@ashley.com" required>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+          <label for="dob">Type of sport*</label>
+          <input type="" id="" name="" placeholder="Hockey" pattern="">
